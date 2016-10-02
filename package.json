@@ -1,0 +1,23 @@
+{
+  "name": "echo-golem",
+  "version": "1.0.0",
+  "description": "a simple node based http echo server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elmiko/echo-golem.git"
+  },
+  "author": "michael mccune",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elmiko/echo-golem/issues"
+  },
+  "homepage": "https://github.com/elmiko/echo-golem#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0"
+  }
+}
