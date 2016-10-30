@@ -7,7 +7,7 @@ app.use(bodyParser.text({type: '*/*'}));
 
 app.post("/", function(req, res) {
   var resp = req.body + '\n';
-  res.status(200).send(req.body);
+  res.status(200).send(resp);
 });
 
 app.listen(8080, function() {
