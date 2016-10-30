@@ -10,3 +10,7 @@ div#body pre {
     padding: .5em;
     overflow: auto;
 }
+
+div#body p code {
+    background: #dddddd;
+}
