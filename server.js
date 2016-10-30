@@ -6,6 +6,7 @@ var app = express();
 app.use(bodyParser.text({type: '*/*'}));
 
 app.post("/", function(req, res) {
+  var resp = req.body + '\n';
   res.status(200).send(req.body);
 });
 
