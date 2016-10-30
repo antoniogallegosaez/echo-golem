@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: echogolem
 ---
 
 # echo-golem
