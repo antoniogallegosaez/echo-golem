@@ -1,0 +1,12 @@
+title: echo-golem
+email: msm@opbstudios.com
+description: >
+    A project to demonstrate the ease of use and deployment for source-to-image
+    applications on the OpenShift platform.
+url: "https://elmiko.github.io/echo-golem" # the base hostname & protocol for your site
+twitter_username: FOSSjunkie
+github_username:  elmiko
+
+# Build settings
+markdown: kramdown
+theme: minima
