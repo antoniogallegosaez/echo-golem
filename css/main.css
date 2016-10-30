@@ -1,0 +1,12 @@
+div#body {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#body pre {
+    background: #aabbcc;
+    margin: 1em;
+    padding: .5em;
+    overflow: auto;
+}
