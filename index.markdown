@@ -83,15 +83,15 @@ Hello World!
 The echo-golem can also be tested locally by creating a Docker image and
 running it from the command line. To create the Docker image, you will need
 to use the
-[source-to-image project](https://github.com/openshift/source-to-image) by
-executing the following command:
+[source-to-image project](https://github.com/openshift/source-to-image) to
+execute the following command:
 
 ```
 $ s2i build git://github.com/elmiko/echo-golem centos/nodejs-4-centos7 echo-golem
 ```
 
 This command will generate the image and place it in your local Docker
-registry with the name `echo-golem`. With the image built, you can now run
+registry with the name `echo-golem`. With the image built, you can now run it
 through Docker with the following command:
 
 ```
