@@ -9,7 +9,7 @@ layout: echogolem
 applications on the OpenShift platform. When running it provides a simple
 HTTP interface that will echo any text based message that is sent.
 
-## Basic Deployment
+## OpenShift deployment
 
 The simplest deployment method is to use the `new-app` command in the
 OpenShift client. While logged in to a cluster, issue the following command:
@@ -75,5 +75,33 @@ confirm that our server is running.
 
 ```
 $ curl http://echo.10.0.1.109.xip.io --data "Hello World!"
+Hello World!
+```
+
+## Local source-to-image deployment
+
+The echo-golem can also be tested locally by creating a Docker image and
+running it from the command line. To create the Docker image, you will need
+to use the
+[source-to-image project](https://github.com/openshift/source-to-image) by
+executing the following command:
+
+```
+$ s2i build git://github.com/elmiko/echo-golem centos/nodejs-4-centos7 echo-golem
+```
+
+This command will generate the image and place it in your local Docker
+registry with the name `echo-golem`. With the image built, you can now run
+through Docker with the following command:
+
+```
+docker run --rm -it -p 8080:8080 echo-golem
+```
+
+Now the echo-golem is listening on your localhost at port 8080, you can test
+this with a similar curl command as before.
+
+```
+$ curl http://localhost:8080 --data "Hello World!"
 Hello World!
 ```
